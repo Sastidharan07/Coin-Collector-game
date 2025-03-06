@@ -18,7 +18,7 @@ def draw():
     coin.draw()
     screen.draw.text("Your Score : " + str(score), color="white", topleft=(10, 10))
     screen.draw.text("To Win A Choclate = Score **150**", color="white", topright=(1490,10))
-    if (game_over and score<100):
+    if (game_over and score<150):
         screen.fill("white")
         lose.draw()
         screen.draw.text("GAME OVER ! ", topleft=(540, 300), fontsize=100,color="black")
